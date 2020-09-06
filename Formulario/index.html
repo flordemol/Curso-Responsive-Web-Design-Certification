@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="container">
+  <header class="header">
+    <h1 id="title">Formulario</h1>
+    <p id="description">Gracias por responder este cuestionario</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Ingrese su nombre"
+        required
+      />
+    </div>
+     <div class="form-group">
+      <label id="email-label" for="email">Correo electrónico</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="ejemplo@ejemplo.com"
+        required
+      />
+    </div>
+         <div class="form-group">
+      <label id="number-label" for="email">Edad (opcional)</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        class="form-control"
+      min="10"
+        max="99"  placeholder="Años"
+      />
+    </div>
+     <div class="form-group">
+    <p>Sexo</p>
+       <select id="dropdown" name="sexo" class="form-control" required>
+        <option disabled selected value>Elija una opción</option>
+         <option value="hombre">Hombre</option>
+         <option value="mujer">Mujer</option>
+       </select>
+    </div>
+       <div class="form-group">         
+      <p>Estás estudiando?</p>
+      <label>
+        <input
+          name="estudios"
+          value="si"
+          type="radio"
+          class="input-radio"
+          checked
+        />Sí</label
+      >
+      <label>
+        <input
+          name="estudios"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+<div class="form-group">
+      <p>
+        Tenés mascota? Indique cuál
+        <span class="clue">(marque todas las que correspondan)</span>
+      </p>
+
+      <label
+        ><input
+          name="mascota"
+          value="perro"
+          type="checkbox"
+          class="input-checkbox"
+        />Perro</label
+      >
+  <label
+        ><input
+          name="mascota"
+          value="gato"
+          type="checkbox"
+          class="input-checkbox"
+        />Gato</label
+      >
+  <label
+        ><input
+          name="otro"
+          value="perro"
+          type="checkbox"
+          class="input-checkbox"
+        />Otro</label
+      >
+  <label
+        ><input
+          name="mascota"
+          value="ninguna"
+          type="checkbox"
+          class="input-checkbox"
+        />No tengo</label
+      >
+  <div class="form-group">
+      <p>Comentarios</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Ingrese su comentario..."
+      ></textarea>
+    </div>
+  <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

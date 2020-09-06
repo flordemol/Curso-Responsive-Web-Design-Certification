@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  z-index: 1;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#container {
+  position: relative;
+  top: 7.5rem;
+  width: 85%;
+  margin: auto;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  padding: 3rem;
+}
+
+#video {
+  width: 2500px;
+  height: 350px;
+  margin-right: 50px;
+}
+
+#about > div > h1 {
+  margin: 20px 0 20px 0;
+  font-size: 50px;
+}
+
+#about > div > h2 {
+  margin-bottom: 20px;
+}
+
+#photos > h2,
+#contact > h2 {
+  text-align: center;
+  font-size: 35px;
+  margin: 50px;
+}
+
+#images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#images > img {
+  margin: 5px;
+  border-radius: 50px;
+  border: 8px solid #aaa;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+}
+
+#form > input {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#form > .btn {
+  background: #a59;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 1300px) {
+  #about {
+    flex-direction: column;
+  }
+
+  #video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 7rem;
+  }
+  nav > ul {
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+  }
+  nav > ul > li {
+    margin: 10px;
+  }
+  #container {
+    top: 13rem;
+  }
+  #about > div > h1,
+  #about > div > h2 {
+    text-align: center;
+  }
+}
